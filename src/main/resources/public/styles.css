@@ -1,0 +1,26 @@
+body{
+   background-image:url("https://wallpaperplay.com/walls/full/3/b/1/105301.jpg");
+   background-size:cover;
+   background-repeat:no-repeat;
+   font-size:150%;
+   color:black;
+}
+
+h1{
+font-family:Cinzel;
+font-size:400%;
+}
+a{
+color:black;
+font-size:100%;
+}
+a:hover{
+color:white;
+text-decoration:none;
+font-size:95.5%;
+background-color:grey;
+box-shadow:0px 0px 50px black;
+}
+li{
+font-size:150px;
+}
