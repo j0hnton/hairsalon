@@ -25,61 +25,61 @@ public class App {
         get("/", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("template", "public/templates/index.vtl");
-            model.put("squads", request.session().attribute("squads"));
+            model.put("salons", request.session().attribute("salons"));
             return new ModelAndView(model, layout);
 
         },
                 new VelocityTemplateEngine());
-        get("/Squad", (request, response) -> {
+        get("/Stylist", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("template", "public/templates/Squad.vtl");
-            model.put("squads", request.session().attribute("squads"));
+            model.put("template", "public/templates/Stylist.vtl");
+            model.put("salons", request.session().attribute("salons"));
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/Squadsuccess", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("squads", request.session().attribute("squads"));
+            model.put("salons", request.session().attribute("salons"));
             model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
         get("/Hero", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("squads", request.session().attribute("squads"));
+            model.put("salons", request.session().attribute("salons"));
             model.put("template", "public/templates/Hero.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
         get("/display", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("squads", request.session().attribute("squads"));
+            model.put("salons", request.session().attribute("salons"));
             model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-        get("/squads", (request, response) -> {
+        get("/salons", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("squads", request.session().attribute("squads"));
+            model.put("salons", request.session().attribute("salons"));
             model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
 
         //post//
-        post("/squads", (request, response) -> {
+        post("/salons", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            ArrayList<Squad> squads = request.session().attribute("squads");
+            ArrayList<Stylist> salons = request.session().attribute("salons");
 
-            if (squads == null) {
-                squads = new ArrayList<Squad>();
-                request.session().attribute("squads", squads);
+            if (salons == null) {
+                salons = new ArrayList<Stylist>();
+                request.session().attribute("salons", salons);
             }
 
 
             String name = request.queryParams("name");
             String gender= request.queryParams("gender");
 
-            Squad newHero = new Squad(name,gender);
-            squads.add(newHero);
+            Stylist newPerson = new Stylist(name,gender);
+            salons.add(newPerson);
 
             model.put("template", "public/templates/Squadsuccess.vtl");
             return new ModelAndView(model, layout);

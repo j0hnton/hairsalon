@@ -1,10 +1,10 @@
-public class Squad{
+public class Stylist{
 
 
     private String mgender;;
     private String mname;
 
-    public Squad(String name,String gender){
+    public Stylist(String name,String gender){
 
          mname=name;
          mgender=gender;
@@ -20,4 +20,5 @@ public class Squad{
         return mname;
     }
 }
+
 
