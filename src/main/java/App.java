@@ -58,6 +58,12 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
+        get("/Client", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("salons", request.session().attribute("salons"));
+            model.put("template", "public/templates/Client.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
 
         //post//
         post("/salons", (request, response) -> {
@@ -72,8 +78,10 @@ public class App {
 
             String name = request.queryParams("name");
             String gender= request.queryParams("gender");
+            String cname= request.queryParams("cname");
 
-            Stylist newPerson = new Stylist(name,gender);
+
+            Stylist newPerson = new Stylist(name,gender,cname);
             salons.add(newPerson);
 
             model.put("template", "public/templates/Success.vtl");
@@ -81,3 +89,4 @@ public class App {
         }, new VelocityTemplateEngine());
     }
 }
+
