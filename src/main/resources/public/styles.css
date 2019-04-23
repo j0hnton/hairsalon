@@ -1,6 +1,5 @@
 body{
-   background-image:url("https://ae01.alicdn.com/kf/HTB19LcepKuSBuNjSsplq6ze8pXaz/Woman-Face-Silhouette-Wall-Stickers-Vinyl-Removable-Fashion-Girl-Face-Wall-Decal-Girl-Head-Hairstyle-Salon.jpg_q50.jpg");
-   background-size:cover;
+   background-size:100% 300%;
    background-repeat:no-repeat;
    font-size:150%;
    color:black;
@@ -14,13 +13,4 @@ a{
 color:black;
 font-size:100%;
 }
-a:hover{
-color:white;
-text-decoration:none;
-font-size:95.5%;
-background-color:grey;
-box-shadow:0px 0px 50px black;
-}
-li{
-font-size:150px;
-}
+

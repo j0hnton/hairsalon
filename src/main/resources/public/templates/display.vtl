@@ -1,16 +1,19 @@
-<a href="/Squad">Click to add Stylists.</a>
-<a href="/Squad">Click to add Clients.</a>
-<h1>STYLISTS</h1>
-    <table class="table-bordered">
-    <th>Stylist Name</th>
-    <th>Gender</th>
-     <th>Clients</th>
-    #foreach ($squad in $squads)
+<a href="/salons">Click to add Stylists.</a>
+<a href="/salons">Click to add Clients.</a>
+<h1>Clients.</h1>
+ <ol>
 
-        <tr>
-         <td>$squad.getname()<td>
-         <td>$squad.getgender()</td>
+    #foreach ($salon in $salons)
+        <li> <p>$salon.getname()-$salon.getgender();</p> </li>
 
-        </tr>
      #end
+     </ol>
+
+ <h1> Clients</h1>
+   <td>
+     #foreach ($salon in $salons)
+           <li> <p>$salon.getname()</li>
+        #end
+        </ol>
+
 </table>

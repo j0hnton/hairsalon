@@ -44,12 +44,7 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/Hero", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons", request.session().attribute("salons"));
-            model.put("template", "public/templates/Hero.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
+
         get("/display", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("salons", request.session().attribute("salons"));
@@ -81,7 +76,7 @@ public class App {
             Stylist newPerson = new Stylist(name,gender);
             salons.add(newPerson);
 
-            model.put("template", "public/templates/Squadsuccess.vtl");
+            model.put("template", "public/templates/Success.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
     }
