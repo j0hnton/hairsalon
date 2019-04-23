@@ -65,6 +65,14 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
+
+        get("/index", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("salons", request.session().attribute("salons"));
+            model.put("template", "public/templates/index.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
         //post//
         post("/salons", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();

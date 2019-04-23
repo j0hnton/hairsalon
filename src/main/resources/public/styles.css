@@ -1,19 +1,20 @@
 body{
    background-size:100% 300%;
    background-repeat:no-repeat;
-   font-size:200%;
    color:black;
    font-family:Raleway;
-   text-align:center;
+   background-image:url("http://www.sonyphotog.com/photos/globalmedicalco/6/29100.jpg");
+   background-size:cover;
 }
 
 h1{
 font-family:Cinzel;
 font-size:300%;
+margin-left:10px;
 }
 a{
 color:black;
-font-size:150%;
+font-size:120%;
 }
 #align{
 display:flex;
@@ -24,4 +25,7 @@ margin-left:75%;
 }
 h2{
 font-family:Raleway;
+}
+.jumbotron{
+opacity:0.7;
 }
