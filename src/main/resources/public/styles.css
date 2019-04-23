@@ -3,8 +3,10 @@ body{
    background-repeat:no-repeat;
    color:black;
    font-family:Raleway;
-   background-image:url("http://www.sonyphotog.com/photos/globalmedicalco/6/29100.jpg");
+   background-image:url("https://w-dog.net/wallpapers/15/4/414908232424268.jpg");
    background-size:cover;
+   color:grey;
+   font-size:150%;
 }
 
 h1{
@@ -14,7 +16,7 @@ margin-left:10px;
 }
 a{
 color:black;
-font-size:120%;
+font-size:180%;
 }
 #align{
 display:flex;
@@ -28,4 +30,26 @@ font-family:Raleway;
 }
 .jumbotron{
 opacity:0.7;
+}
+#card{
+width:26.3%;
+}
+img{
+border-radius:150px;
+}
+.font{
+font-size:150%;
+}
+.font2{
+font-size:150;
+}
+
+a{
+color:grey;
+}
+td{
+font-size:150;
+}
+form{
+font-size:150;
 }
