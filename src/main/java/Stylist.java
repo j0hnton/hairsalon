@@ -1,30 +1,30 @@
 public class Stylist{
 
 
-    private String mgender;;
-    private String mname;
-    private String mcname;
+    private String Gender;;
+    private String Name;
+    private String Cname;
 
 
     public Stylist(String name,String gender,String cname){
 
-         mname=name;
-         mgender=gender;
-         mcname=cname;
+         Name=name;
+         Gender=gender;
+         Cname=cname;
 
 
     }
 
     public String getgender() {
-        return mgender;
+        return Gender;
     }
 
     public String getname() {
-        return mname;
+        return Name;
     }
 
     public String getcname() {
-        return mcname;
+        return Cname;
     }
 }
 
