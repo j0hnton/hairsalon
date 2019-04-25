@@ -5,7 +5,7 @@ body{
    font-family:Raleway;
    background-image:url("https://w-dog.net/wallpapers/15/4/414908232424268.jpg");
    background-size:cover;
-   color:grey;
+   color:black;
    font-size:150%;
 }
 
@@ -13,6 +13,7 @@ h1{
 font-family:Cinzel;
 font-size:300%;
 margin-left:10px;
+color:brown;
 }
 a{
 color:black;
@@ -52,4 +53,14 @@ font-size:150;
 }
 form{
 font-size:150;
+}
+table td {
+    font-size: 100%;
+    font-weight: 300;
+    background-color:white;
+    opacity:0.7;
+}
+table th {
+background-color:white;
+opacity:0.7;
 }

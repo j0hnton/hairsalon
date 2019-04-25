@@ -16,10 +16,5 @@ public class HeroSalonTest {
             con.createQuery(sql).executeUpdate();
         }
     }
-    @Test
-    public void save_returnsTrueIfDescriptionsAretheSame() {
-         myTask = new Task("Mow the lawn");
-        myTask.save();
-        assertTrue(Task.all().get(0).equals(myTask));
-    }
+
 }

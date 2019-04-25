@@ -1,4 +1,4 @@
- import spark.ModelAndView;
+import spark.ModelAndView;
  import spark.template.velocity.VelocityTemplateEngine;
 
  import java.util.ArrayList;
@@ -6,6 +6,7 @@
  import java.util.Map;
 
  import static spark.Spark.*;
+
 
 public class App {
     public static void main(String[] args) {
@@ -39,7 +40,7 @@ public class App {
 
         get("/Squadsuccess", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons", request.session().attribute("salons"));
+            model.put("salons", Stylist.all());
             model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
@@ -47,7 +48,7 @@ public class App {
 
         get("/display", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons", request.session().attribute("salons"));
+            model.put("salons", Stylist.all());
             model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
@@ -76,23 +77,21 @@ public class App {
         //post//
         post("/salons", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            ArrayList<Stylist> salons = request.session().attribute("salons");
-
-            if (salons == null) {
-                salons = new ArrayList<Stylist>();
-                request.session().attribute("salons", salons);
-            }
-
-
             String name = request.queryParams("name");
             String gender= request.queryParams("gender");
             String cname= request.queryParams("cname");
-
-
             Stylist newPerson = new Stylist(name,gender,cname);
-            salons.add(newPerson);
-
+            newPerson.save();
             model.put("template", "public/templates/Success.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        post("/delete-stylist", (request, response) -> {
+            HashMap<String, Object> model = new HashMap<String, Object>();
+             Stylist stylist = Stylist.find(Integer.parseInt(request.queryParams("id")));
+            stylist.delete();
+            model.put("salons", stylist);
+            model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
     }

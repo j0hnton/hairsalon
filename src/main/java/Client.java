@@ -1,16 +1,16 @@
+import java.util.List;
+import org.sql2o.*;
 public class Client {
 
-    private String mcname;
-    public Client(String cname){
+    private String Cname;
 
-        mcname=cname;
+    public Client(String cname) {
+
+        this.Cname = cname;
     }
 
 
     public String getcname() {
-        return mcname;
+        return Cname;
     }
 }
-
-
-
