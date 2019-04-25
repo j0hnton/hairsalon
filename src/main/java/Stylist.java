@@ -7,14 +7,12 @@ public class Stylist {
     private int id;
     private String Gender;
     private String Name;
-    private String Cname;
 
 
-    public Stylist(String name, String gender, String cname) {
+    public Stylist(String name, String gender) {
 
         Name = name;
         Gender = gender;
-        Cname = cname;
 
 
     }
@@ -27,9 +25,6 @@ public class Stylist {
         return Name;
     }
 
-    public String getcname() {
-        return Cname;
-    }
 
     public int getId() {
         return id;
@@ -42,8 +37,7 @@ public class Stylist {
         } else {
             Stylist newStylist = (Stylist) anotherStylist;
             return this.getname().equals(newStylist.getname()) &&
-                    this.getgender() == newStylist.getgender() &&
-                    this.getcname() == newStylist.getcname();
+                    this.getgender() == newStylist.getgender();
 
 
         }
@@ -58,27 +52,28 @@ public class Stylist {
 
     public void save() {
         try (Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO Stylist (name,gender,cname) VALUES (:name, :gender, :cname)";
+            String sql = "INSERT INTO Stylist (name,gender) VALUES (:name, :gender)";
             this.id = (int) con.createQuery(sql, true)
                     .addParameter("name", Name)
                     .addParameter("gender", Gender)
-                    .addParameter("cname", Cname)
 
 
                     .executeUpdate()
                     .getKey();
         }
     }
+
     public void delete() {
-        try(Connection con = DB.sql2o.open()) {
+        try (Connection con = DB.sql2o.open()) {
             String sql = "DELETE FROM stylist WHERE id = :id;";
             con.createQuery(sql)
                     .addParameter("id", id)
                     .executeUpdate();
         }
     }
+
     public static Stylist find(int id) {
-        try(Connection con = DB.sql2o.open()) {
+        try (Connection con = DB.sql2o.open()) {
             String sql = "SELECT * FROM stylist where id = :id;";
             return con.createQuery(sql)
                     .addParameter("id", id)
@@ -86,4 +81,3 @@ public class Stylist {
         }
     }
 }
-
