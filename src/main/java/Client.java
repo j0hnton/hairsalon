@@ -3,26 +3,26 @@ import org.sql2o.*;
 public class Client {
 
     private int id;
-    private String SGender;
-    private String SName;
+    private String Gender;
+    private String Name;
     private String Cname;
 
 
-    public Client(String sname, String sgender, String cname) {
+    public Client(String name, String gender, String cname) {
 
-       SName = sname;
-        SGender = sgender;
+       Name = name;
+        Gender = gender;
         Cname = cname;
 
 
     }
 
-    public String getsgender() {
-        return SGender;
+    public String getgender() {
+        return Gender;
     }
 
-    public String getsname() {
-        return SName;
+    public String getname() {
+        return Name;
     }
 
     public String getcname() {
@@ -39,8 +39,8 @@ public class Client {
             return false;
         } else {
             Client newClient = (Client) anotherClient;
-            return this.getsname().equals(newClient.getsname()) &&
-                    this.getsgender() == newClient.getsgender() &&
+            return this.getname().equals(newClient.getname()) &&
+                    this.getgender() == newClient.getgender() &&
                     this.getcname() == newClient.getcname();
 
 
@@ -56,10 +56,10 @@ public class Client {
 
     public void save() {
         try (Connection con = DB.sql2o.open()) {
-            String sql = "INSERT INTO client (name ,gender,cname) VALUES (:sname, :sgender , :cname)";
+            String sql = "INSERT INTO client (name ,gender,cname) VALUES (:name, :gender , :cname)";
             this.id = (int) con.createQuery(sql, true)
-                    .addParameter("sname", SName)
-                    .addParameter("sgender", SGender)
+                    .addParameter("name", Name)
+                    .addParameter("gender", Gender)
                     .addParameter("cname", Cname)
                     .executeUpdate()
                     .getKey();

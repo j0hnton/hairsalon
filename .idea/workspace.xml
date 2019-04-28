@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="BookmarkManager">
-    <bookmark url="file://$PROJECT_DIR$/src/main/java/App.java" description="}, new VelocityTemplateEngine());" line="53" />
+    <bookmark url="file://$PROJECT_DIR$/src/main/java/App.java" description="}, new VelocityTemplateEngine());" line="55" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9b005f10-ea4e-4191-8c00-57d616e65207" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/public/templates/deletesuccess.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dictionaries/moringaschool.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dictionaries/moringaschool.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Client.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Stylist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Stylist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/styles.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/styles.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/templates/Stylist.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/Stylist.vtl" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/public/templates/display.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/display.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/templates/clientsuccess.vtl" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
@@ -49,58 +46,23 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/Stylist.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="383">
-              <caret line="81" column="5" lean-forward="true" selection-start-line="81" selection-start-column="5" selection-end-line="81" selection-end-column="5" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#350#351#0" expanded="true" />
-                <element signature="e#379#380#0" expanded="true" />
-                <element signature="e#410#411#0" expanded="true" />
-                <element signature="e#437#438#0" expanded="true" />
-                <element signature="e#523#524#0" expanded="true" />
-                <element signature="e#548#549#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="15" column="11" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="78" column="69" lean-forward="true" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
+            <state relative-caret-position="150">
+              <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#3237#3253#0" expanded="true" />
-                <element signature="e#3782#3798#0" expanded="true" />
-                <element signature="e#4341#4357#0" expanded="true" />
-                <element signature="e#4802#4818#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="jar://$PROJECT_DIR$/../.gradle/caches/modules-2/files-2.1/org.eclipse.jetty/jetty-io/9.3.2.v20150730/86c0287896433c35bf53f61a465f021f292a83eb/jetty-io-9.3.2.v20150730-sources.jar!/org/eclipse/jetty/io/SelectChannelEndPoint.java">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="139">
-              <caret line="74" column="30" selection-start-line="74" selection-start-column="30" selection-end-line="74" selection-end-column="30" />
-              <folding>
-                <element signature="e#2436#2437#0" expanded="true" />
-                <element signature="e#2488#2489#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="180">
+              <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
             </state>
           </provider>
         </entry>
@@ -108,18 +70,10 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="52">
-              <caret line="58" column="99" selection-start-line="58" selection-start-column="99" selection-end-line="58" selection-end-column="99" />
+            <state relative-caret-position="735">
+              <caret line="58" column="82" selection-start-line="58" selection-start-column="82" selection-end-line="58" selection-end-column="82" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#337#338#0" expanded="true" />
-                <element signature="e#366#367#0" expanded="true" />
-                <element signature="e#397#398#0" expanded="true" />
-                <element signature="e#424#425#0" expanded="true" />
-                <element signature="e#456#457#0" expanded="true" />
-                <element signature="e#484#485#0" expanded="true" />
-                <element signature="e#510#511#0" expanded="true" />
-                <element signature="e#535#536#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -128,17 +82,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/display.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Success.vtl">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="10" lean-forward="true" selection-end-line="2" />
+            <state relative-caret-position="90">
+              <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
             </state>
           </provider>
         </entry>
@@ -146,8 +91,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="15">
-              <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
+            <state relative-caret-position="225">
+              <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/deletesuccess.vtl">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="30">
+              <caret line="2" selection-start-line="2" selection-end-line="2" />
             </state>
           </provider>
         </entry>
@@ -155,8 +109,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+            <state relative-caret-position="210">
+              <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
             </state>
           </provider>
         </entry>
@@ -182,6 +136,8 @@
       <find>salonDatabase</find>
       <find>client</find>
       <find>sty</find>
+      <find>stylist</find>
+      <find>clie</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -218,11 +174,12 @@
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/deletesuccess.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/clientaddsuccess.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/Stylist.java" />
-        <option value="$PROJECT_DIR$/src/main/java/Client.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl" />
-        <option value="$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/Stylist.vtl" />
         <option value="$PROJECT_DIR$/src/main/resources/public/templates/display.vtl" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl" />
+        <option value="$PROJECT_DIR$/src/main/java/Client.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl" />
+        <option value="$PROJECT_DIR$/src/main/resources/public/templates/clientsuccess.vtl" />
         <option value="$PROJECT_DIR$/src/main/java/App.java" />
       </list>
     </option>
@@ -234,6 +191,7 @@
     </treeState>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="683" />
     <option name="y" value="30" />
     <option name="width" value="683" />
     <option name="height" value="738" />
@@ -244,6 +202,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -310,7 +269,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -474,11 +432,11 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.App" />
       <item itemvalue="Gradle.HeroTest.HeroSkill_instantiatesCorrectly2_true" />
       <item itemvalue="Gradle.HeroTest.HeroSkill_instantiatesCorrectly_true" />
       <item itemvalue="Gradle.SquadTest" />
       <item itemvalue="Gradle.SquadTest.Squad_instantiatesCorrectly_true" />
-      <item itemvalue="Application.App" />
     </list>
     <recent_temporary>
       <list>
@@ -545,26 +503,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="30" width="1366" height="738" extended-state="6" />
+    <frame x="0" y="30" width="1366" height="738" extended-state="7" />
+    <editor active="true" />
     <layout>
       <window_info id="Designer" order="0" />
       <window_info id="Capture Tool" order="1" />
       <window_info id="UI Designer" order="2" />
       <window_info id="Favorites" order="3" sideWeight="0.5043668" side_tool="true" weight="0.34924242" />
       <window_info id="Image Layers" order="4" />
-      <window_info content_ui="combo" id="Project" order="5" sideWeight="0.49563318" visible="true" weight="0.24469697" />
+      <window_info active="true" content_ui="combo" id="Project" order="5" sideWeight="0.49563318" visible="true" weight="0.505303" />
       <window_info id="Structure" order="6" sideWeight="0.5043668" side_tool="true" weight="0.34924242" />
-      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49924242" weight="0.4187192" />
-      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5007576" side_tool="true" weight="0.049261082" />
+      <window_info anchor="bottom" id="Terminal" order="0" sideWeight="0.49772727" visible="true" weight="0.4187192" />
+      <window_info anchor="bottom" id="Event Log" order="1" sideWeight="0.5022727" side_tool="true" visible="true" weight="0.4187192" />
       <window_info anchor="bottom" id="Build" order="2" weight="0.32840723" />
       <window_info anchor="bottom" id="Version Control" order="3" weight="0.32840723" />
       <window_info anchor="bottom" id="Message" order="4" />
       <window_info anchor="bottom" id="Find" order="5" weight="0.32840723" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.26929393" />
+      <window_info active="true" anchor="bottom" id="Run" order="6" sideWeight="0.4976452" visible="true" weight="0.272578" />
       <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" weight="0.32840723" />
+      <window_info anchor="bottom" id="TODO" order="10" sideWeight="0.49921507" weight="0.32840723" />
       <window_info anchor="right" id="Coverage" order="0" side_tool="true" />
       <window_info anchor="right" id="Gradle" order="1" />
       <window_info anchor="right" id="Capture Analysis" order="2" />
@@ -666,20 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="180">
-          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/index.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/HeroTask.java" />
     <entry file="file://$PROJECT_DIR$/build.gradle">
       <provider selected="true" editor-type-id="text-editor">
@@ -725,20 +670,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/deletesuccess.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="31" lean-forward="true" selection-start-line="1" selection-start-column="31" selection-end-line="1" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/clientaddsuccess.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="30">
-          <caret line="2" selection-start-line="2" selection-end-line="2" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/clientaddsuccess.vtl" />
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/styles.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
@@ -773,42 +705,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="52">
-          <caret line="58" column="99" selection-start-line="58" selection-start-column="99" selection-end-line="58" selection-end-column="99" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#337#338#0" expanded="true" />
-            <element signature="e#366#367#0" expanded="true" />
-            <element signature="e#397#398#0" expanded="true" />
-            <element signature="e#424#425#0" expanded="true" />
-            <element signature="e#456#457#0" expanded="true" />
-            <element signature="e#484#485#0" expanded="true" />
-            <element signature="e#510#511#0" expanded="true" />
-            <element signature="e#535#536#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="6" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="15">
-          <caret line="1" column="33" selection-start-line="1" selection-start-column="33" selection-end-line="1" selection-end-column="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Success.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="10" lean-forward="true" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/index.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="39" selection-start-line="7" selection-start-column="39" selection-end-line="7" selection-end-column="39" />
         </state>
       </provider>
     </entry>
@@ -819,23 +726,64 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Client.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="735">
+          <caret line="58" column="82" selection-start-line="58" selection-start-column="82" selection-end-line="58" selection-end-column="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/display.vtl">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="10" selection-start-line="24" selection-start-column="10" selection-end-line="24" selection-end-column="10" />
+        <state relative-caret-position="90">
+          <caret line="6" column="29" selection-start-line="6" selection-start-column="29" selection-end-line="6" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/clientsuccess.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" column="4" selection-start-line="2" selection-start-column="4" selection-end-line="2" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/deletesuccess.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="2" selection-start-line="2" selection-end-line="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Clientsdisplay.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="14" column="33" selection-start-line="14" selection-start-column="33" selection-end-line="14" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/Client.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" column="6" selection-start-line="15" selection-start-column="6" selection-end-line="15" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" column="17" lean-forward="true" selection-start-line="12" selection-start-column="17" selection-end-line="12" selection-end-column="17" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="78" column="69" lean-forward="true" selection-start-line="78" selection-start-column="69" selection-end-line="78" selection-end-column="69" />
+        <state relative-caret-position="150">
+          <caret line="73" column="46" lean-forward="true" selection-start-line="73" selection-start-column="46" selection-end-line="73" selection-end-column="46" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#3237#3253#0" expanded="true" />
-            <element signature="e#3782#3798#0" expanded="true" />
-            <element signature="e#4341#4357#0" expanded="true" />
-            <element signature="e#4802#4818#0" expanded="true" />
           </folding>
         </state>
       </provider>

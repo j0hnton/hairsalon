@@ -3,6 +3,7 @@
     <words>
       <w>clientdisplay</w>
       <w>clientsdisplay</w>
+      <w>clientsuccess</w>
       <w>getcname</w>
       <w>getgender</w>
       <w>getname</w>

@@ -1,25 +1,26 @@
+<a  href="/index">Choose again</a>
 <div class="col-md-6">
- <h2> <strong>Clients <strong></h2>
-  <table class="table-bordered">
-   <th class="font" >Stylist Name</th>
-   <th  class="font" >Client name</th>
-      <th class="font">No longer here.</th>
+<h2><strong>Clients.</strong></h2>
+<table class="table-bordered">
+ <th class="font"> Client ID</th>
+ <th class="font"> Client name</th>
+ <th class="font">Gender</th>
+ <th class="font">No longer here.</th>
 
-      #foreach ($salonsadd in $salonsadd)
-      <tr>
-          <td class="font2">$salonsadd.getsname()</td>
-          <td class="font2">$salonsadd.gecname()</td>
+    #foreach ($salon1 in $salon1s)
 
-
- <td>
-        <form action="/delete-client" method="post">
-                        <input id="name" name="id" type="hidden" class="form-control" value="$salonsadd.getId()">
-                          <button type="submit" class="btn btn-basic" id="delete"><h6>Delete client</h6></button>
+    <tr>
+    <td class="font2">$salon1.getId()</td>
+        <td class="font2" >$salon1.getname()</td>
+        <td class="font2">$salon1.getgender()</td>
+        <td>
+        <form action="/delete-stylist" method="post">
+                        <input id="name" name="id" type="hidden" class="form-control" value="$salon.getId()">
+                          <button type="submit" class="btn btn-basic" id="delete"><h6>Delete stylist</h6></button>
                         </form>
         </td>
 
-
-       </tr>
-       #end
-    </table>
+     </tr>
+     #end
+  </table>
 </div>

@@ -54,20 +54,6 @@ public class App {
             model.put("template", "public/templates/display.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
-        get("/salons", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salonsadd", Client.all());
-            model.put("template", "public/templates/display.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
-
-        get("/Client", (request, response) -> {
-            Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons", request.session().attribute("salons"));
-            model.put("template", "public/templates/Client.vtl");
-            return new ModelAndView(model, layout);
-        }, new VelocityTemplateEngine());
-
 
         get("/index", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
@@ -76,10 +62,34 @@ public class App {
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/clientdisplay", (request, response) -> {
+
+        //clients//
+        get("/", (request, response) -> {
+                    Map<String, Object> model = new HashMap<String, Object>();
+                    model.put("template", "public/templates/index.vtl");
+                    model.put("salons", request.session().attribute("salons1"));
+                    return new ModelAndView(model, layout);
+
+                },
+                new VelocityTemplateEngine());
+        get("/Client", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("salons1", request.session().attribute("salons1"));
-            model.put("template", "public/templates/Clientsdisplay.vtl");
+            model.put("template", "public/templates/Client.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/salons1", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("salons1", Client.all());
+            model.put("template", "public/templates/display.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+
+        get("/clientsuccess", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            model.put("salons1", request.session().attribute("salons1"));
+            model.put("template", "public/templates/clientsuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -103,7 +113,7 @@ public class App {
             String cname = request.queryParams("cname");
             Client newClient = new Client(sname, sgender, cname);
             newClient.save();
-            model.put("template", "public/templates/display.vtl");
+            model.put("template", "public/templates/Clientsdisplay.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -121,7 +131,7 @@ public class App {
             HashMap<String, Object> model = new HashMap<String, Object>();
             Client  client = Client.find(Integer.parseInt(request.queryParams("id")));
             client.delete();
-            model.put("salons", client);
+            model.put("salons1", client);
             model.put("template", "public/templates/deletesuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
