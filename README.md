@@ -9,4 +9,4 @@ Currently the bug that exists is that the app may not work on all browsers.
 ## Technologies Used
 To come up with the app, i used Java
 ## Support and contact details
-For more info or feedback, feel free to contact us on afrikiddo@gmail.co
+For more info or feedback, feel free to contact us on afrikiddo@gmail.com
