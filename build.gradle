@@ -1,7 +1,8 @@
 apply plugin: 'java'
 apply plugin: 'application'
 
-archivesBaseName = "herosalon"
+archivesBaseName = "hairsalon"
+applicationName = "hairsalon"
 version = '1.0'
 mainClassName = "App"
 
@@ -11,10 +12,13 @@ repositories {
 
 dependencies {
     compile group: 'com.sparkjava', name: 'spark-core', version: '2.3'
-    testCompile group: 'junit', name: 'junit', version: '4.+'
     compile group: 'org.apache.velocity', name: 'velocity', version: '1.7'
-    compile group: 'org.sql2o', name: 'sql2o', version: '1.5.4'
-    compile group: 'org.postgresql', name: 'postgresql', version: "9.4-1201-jdbc41"
+
+    compile 'com.sparkjava:spark-template-velocity:2.5.5'
+    compile "org.slf4j:slf4j-api:1.6.1"
+    compile "org.slf4j:slf4j-simple:1.6.1"
+    testCompile group: 'junit', name: 'junit', version: '4.+'
 }
-defaultTask = ['clean']
-task stage(dependsOn:  ['clean','installDist'])
+
+defaultTasks = ['clean']
+task stage(dependsOn: ['clean', 'installDist'])
