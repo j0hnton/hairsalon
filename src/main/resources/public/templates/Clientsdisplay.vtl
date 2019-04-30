@@ -5,18 +5,20 @@
  <th class="font"> Client ID</th>
  <th class="font"> Client name</th>
  <th class="font">Gender</th>
+  <th class="font">Stylist Name</th>
  <th class="font">No longer here.</th>
 
-    #foreach ($salon1 in $salon1s)
+    #foreach ($salon in $salons)
 
     <tr>
-    <td class="font2">$salon1.getId()</td>
-        <td class="font2" >$salon1.getname()</td>
-        <td class="font2">$salon1.getgender()</td>
+    <td class="font2">$salon.getId()</td>
+        <td class="font2" >$salon.getcname()</td>
+          <td class="font2">$salon.getgender()</td>
+              <td class="font2">$salon.getname()</td>
         <td>
-        <form action="/delete-stylist" method="post">
-                        <input id="name" name="id" type="hidden" class="form-control" value="$salon.getId()">
-                          <button type="submit" class="btn btn-basic" id="delete"><h6>Delete stylist</h6></button>
+        <form action="/delete-client" method="post">
+                        <input id="delete" name="delete" type="hidden" class="form-control" value="$salon.getId()">
+                          <button type="submit" class="btn btn-basic" id="delete"><h6>Delete Client</h6></button>
                         </form>
         </td>
 

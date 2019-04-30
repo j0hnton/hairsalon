@@ -63,35 +63,29 @@ public class App {
         }, new VelocityTemplateEngine());
 
 
-        //clients//
-        get("/", (request, response) -> {
-                    Map<String, Object> model = new HashMap<String, Object>();
-                    model.put("template", "public/templates/index.vtl");
-                    model.put("salons", request.session().attribute("salons1"));
-                    return new ModelAndView(model, layout);
-
-                },
-                new VelocityTemplateEngine());
         get("/Client", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons1", request.session().attribute("salons1"));
+            model.put("salons", request.session().attribute("salons"));
             model.put("template", "public/templates/Client.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/salons1", (request, response) -> {
+        get("/Clientsdisplay", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons1", Client.all());
-            model.put("template", "public/templates/display.vtl");
+            model.put("salons", Client.all());
+            model.put("template", "public/templates/Clientsdisplay.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
-        get("/clientsuccess", (request, response) -> {
+
+        get("/deletesuccess", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
-            model.put("salons1", request.session().attribute("salons1"));
-            model.put("template", "public/templates/clientsuccess.vtl");
+            model.put("salons", request.session().attribute("salons"));
+            model.put("template", "public/templates/deletesuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
+
+
 
 
         //post//
@@ -103,6 +97,16 @@ public class App {
             Stylist newPerson = new Stylist(name, gender);
             newPerson.save();
             model.put("template", "public/templates/Success.vtl");
+            return new ModelAndView(model, layout);
+        }, new VelocityTemplateEngine());
+        post("/clientsuccess", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+            String name = request.queryParams("name");
+            String gender = request.queryParams("gender");
+            String cname = request.queryParams("cname");
+            Client newClient = new Client(name, gender, cname);
+            newClient.save();
+            model.put("template", "public/templates/clientsuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
@@ -129,10 +133,10 @@ public class App {
 
         post("/delete-client", (request, response) -> {
             HashMap<String, Object> model = new HashMap<String, Object>();
-            Client  client = Client.find(Integer.parseInt(request.queryParams("id")));
+            Client  client = Client.find(Integer.parseInt(request.queryParams("delete")));
             client.delete();
-            model.put("salons1", client);
-            model.put("template", "public/templates/deletesuccess.vtl");
+            model.put("salons", client);
+            model.put("template", "public/templates/deleteclientsuccess.vtl");
             return new ModelAndView(model, layout);
         }, new VelocityTemplateEngine());
 
