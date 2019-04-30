@@ -4,7 +4,9 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/App.java" description="}, new VelocityTemplateEngine());" line="55" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9b005f10-ea4e-4191-8c00-57d616e65207" name="Default Changelist" comment="" />
+    <list default="true" id="9b005f10-ea4e-4191-8c00-57d616e65207" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl" afterDir="false" />
+    </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/.gradle/" />
     <ignored path="$PROJECT_DIR$/build/" />
@@ -111,7 +113,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="60">
-              <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
+              <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
             </state>
           </provider>
         </entry>
@@ -775,7 +777,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/resources/public/templates/layout.vtl">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
-          <caret line="4" column="78" selection-start-line="4" selection-start-column="78" selection-end-line="4" selection-end-column="78" />
+          <caret line="4" column="76" lean-forward="true" selection-start-line="4" selection-start-column="76" selection-end-line="4" selection-end-column="76" />
         </state>
       </provider>
     </entry>
